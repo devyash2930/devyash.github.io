@@ -7348,7 +7348,7 @@ h1, h2, h3, h4, h5,
   transition: all 0.5s ease; }
   @media (min-width: 992px) {
     #colorlib-aside {
-      width: 22%; } }
+      width: 20%; } }
   @media (max-width: 991.98px) {
     #colorlib-aside {
       width: 270px;
@@ -7525,7 +7525,8 @@ h1, h2, h3, h4, h5,
 
 #colorlib-main {
   width: 100%;
-  float: right;
+  margin-left: 20%;
+  float: left;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -7533,7 +7534,16 @@ h1, h2, h3, h4, h5,
   transition: all 0.5s ease; }
   @media (min-width: 992px) {
     #colorlib-main {
-      width: 78%; } }
+      width: 78%; /* When the screen is larger than 992px, the content will take up 78% of the width */
+    }
+  }
+  
+  @media (max-width: 991.98px) {
+    #colorlib-main {
+      width: 100%; /* Full width on smaller screens */
+      margin-left: 0; /* No margin for mobile devices */
+    }
+  }
 
 .colorlib-nav-toggle {
   cursor: pointer;
