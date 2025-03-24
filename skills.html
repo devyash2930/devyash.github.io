@@ -32,52 +32,82 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      gap: 20px;
+      gap: clamp(10px, 2vw, 20px);
       width: 100%;
+      padding: clamp(1rem, 3vw, 3rem);
     }
-    
+
     .skill-item {
-      flex: 0 0 calc(25% - 20px);
-      margin-bottom: 30px;
+      flex: 0 0 calc(25% - clamp(15px, 2vw, 20px));
+      margin-bottom: clamp(15px, 4vw, 30px);
       text-align: center;
     }
-    
+
     .skill-item img {
       max-width: 75%;
       height: auto;
       transition: transform 0.3s ease;
       display: block;
       margin: 0 auto;
+      /* Add a min-width to prevent icons from becoming too small */
+      min-width: 40px;
     }
-    
+
     .skill-item img:hover {
       transform: scale(1.1);
     }
-    
+
     .skill-category {
-      margin-top: 50px;
-      margin-bottom: 30px;
+      margin-top: clamp(25px, 5vw, 50px);
+      margin-bottom: clamp(15px, 3vw, 30px);
     }
-    
+
     /* Responsive adjustments */
     @media (max-width: 991px) {
       .skill-item {
-        flex: 0 0 calc(33.333% - 20px);
+        flex: 0 0 calc(33.333% - clamp(13px, 2vw, 20px));
       }
     }
-    
+
     @media (max-width: 767px) {
       .skill-item {
-        flex: 0 0 calc(50% - 20px);
+        flex: 0 0 calc(50% - clamp(10px, 2vw, 20px));
       }
     }
-    
+
+    /* Modified for mobile to show 2 icons per row instead of 1 */
     @media (max-width: 480px) {
       .skill-item {
-        flex: 0 0 100%;
+        flex: 0 0 calc(50% - clamp(8px, 1.5vw, 15px));
+        margin-bottom: 15px;
+      }
+      
+      .skills-container {
+        gap: clamp(8px, 1.5vw, 15px);
+        padding: clamp(0.5rem, 2vw, 1.5rem);
+      }
+      
+      .skill-item img {
+        max-width: 60%;
       }
     }
-    
+
+    /* Very small screens - still maintain 2 per row but smaller */
+    @media (max-width: 320px) {
+      .skills-container {
+        gap: 8px;
+        padding: 0.5rem;
+      }
+      
+      .skill-item {
+        margin-bottom: 10px;
+      }
+      
+      .skill-item img {
+        max-width: 50%;
+      }
+    }
+
     /* Fix for sidebar on small screens */
     @media (max-width: 767px) {
       #colorlib-aside {
