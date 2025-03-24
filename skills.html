@@ -1,296 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Devyash Shah</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Devyash Shah</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="js/fontawesome.js"></script>
+  
+  <style>
+    /* Custom responsive styles */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 20px;
+      width: 100%;
+    }
+    
+    .skill-item {
+      flex: 0 0 calc(25% - 20px);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    
+    .skill-item img {
+      max-width: 75%;
+      height: auto;
+      transition: transform 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .skill-item img:hover {
+      transform: scale(1.1);
+    }
+    
+    .skill-category {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .skill-item {
+        flex: 0 0 calc(33.333% - 20px);
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .skill-item {
+        flex: 0 0 calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .skill-item {
+        flex: 0 0 100%;
+      }
+    }
+    
+    /* Fix for sidebar on small screens */
+    @media (max-width: 767px) {
+      #colorlib-aside {
+        width: 300px;
+        transform: translateX(-300px);
+      }
+    }
+  </style>
+</head>
+<body>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+<div id="colorlib-page">
+  <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+  <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+    <h1 id="colorlib-logo"><a href="index.html">
+      <span class="img" style="background-image: url(images/profile-circle.svg); display: inline-block; width: 200px; height: 200px; background-size: cover; border-radius: 50%;"></span>
+      Devyash Shah
+    </a></h1>
+    <nav id="colorlib-main-menu" role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Academic Projects</a></li>
+        <li class="colorlib-active"><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-    <script src="js/fontawesome.js"></script>
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-
-	<div id="colorlib-page">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
-			<!-- <h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/LinkedIn.jpeg);"></span>Parshwa Shah</a></h1> -->
-      <h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/profile-circle.svg); display: inline-block; width: 200px; height: 200px; background-size: cover; border-radius: 50%;"></span>Devyash Shah</a></h1>
-			<nav id="colorlib-main-menu" role="navigation">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="education.html">Education</a></li>
-					<li><a href="experience.html">Experience</a></li>
-					<li><a href="projects.html">Academic Projects</a></li>
-					<li class="colorlib-active"><a href="skills.html">Skills</a></li>
-          <!-- <li><a href="contributions.html">Contributions</a></li> -->
-					<!--<li><a href="contact.html">Contact</a></li>-->
-				</ul>
-			</nav>
-		</aside>
-
-    <div id="colorlib-main">
-      <section class="ftco-section ftco-bread">
-        <div class="container" style="margin-left: 0;">
-          <div class="row no-gutters slider-text ">
-            <div class="col-md-8 ftco-animate">
-              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Skills</span></p>
-              <h1 class="big-letter">Skills</h1>
-            </div>
+  <div id="colorlib-main">
+    <section class="ftco-section ftco-bread">
+      <div class="container" style="margin-left: 0;">
+        <div class="row no-gutters slider-text">
+          <div class="col-md-8 ftco-animate">
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Skills</span></p>
+            <h1 class="big-letter">Skills</h1>
           </div>
         </div>
-      </section>
-
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-    	   <div class="my-auto">
-           <div class="subheading mb-4"><h3 class="subheading-style">Programming Languages</h3></div>
-            <div style="width: 100%; height: 100%;">
-              <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Python" alt="Python" src="icons/python.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="R" alt="R" src="icons/R.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Android" alt="Android" src="icons/android.png" width=75% style="display: block; margin-top: 25px;margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Scilab" alt="Scilab" src="icons/scilab.jpeg" width=80% style="display: block; margin-top: 70px;margin-left: 5px; margin-right: auto;"></a> </li>
-                </ul>
-                <!-- <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Clingo" alt="Clingo" src="icons/clingo.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>              -->
-               </div>
-
-              <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Java" alt="Java" src="icons/java.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="MATLAB" alt="MATLAB" src="icons/MATLAB.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="HTML" alt="HTML" src="icons/html.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Octave" alt="Octave" src="icons/octave.png" width=62% style="display: block; margin-top: 10px;margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-              </div>
-
-              <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="C" alt="C" src="icons/c.png" width=75% style="display: block; margin-top: -20px; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="JavaScript" alt="JavaScript" src="icons/js.svg" width=50% style="display: block; margin-top: -10px;margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Shell Script" alt="Shell Script  " src="icons/shell.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Arduino" alt="Arduino" src="icons/arduino.png" width=75% style="display: block; margin-top: -10px;margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"></li>
-                </ul>
-              </div>
-
-              <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-                <ul>
-                  
-                  <li class="list-inline-item"><a href="#"><img title="XML" alt="XML" src="icons/icons8-xml-96.png" width=75% style="width: 200px; height: auto ; display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="Verliog" alt="Verilog" src="icons/verilog.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="CSS" alt="CSS" src="icons/css.png" width=68% style="display: block; margin-top: 12px; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-                <ul>
-                  <li class="list-inline-item"><a href="#"><img title="LaTeX" alt="LaTeX" src="icons/LaTeX.svg" width=75% style="display: block; margin-top: 60px; margin-left: auto; margin-right: auto;"></a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-      </section>
-
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-    	  <div class="my-auto">
-          <div class="subheading mb-4"><h3 class="subheading-style">Databases</h3></div>
-           <div style="width: 100%; height: 100%;">
-
-             <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-               <ul>
-                 <li class="list-inline-item"><a href="#"><img title="MYSQL" alt="MYSQL" src="icons/mysql.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-               </ul>
-             </div>
-
-             <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;margin-top: 23px;">
-               <ul>
-                 <li class="list-inline-item"><a href="#"><img title="SQLite" alt="SQLite" src="icons/SQLite.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-               </ul>
-             </div>
-
-             <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px; margin-top: -30px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="mongoDB" alt="mongoDB" src="icons/mongoDB.jpg" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a></li>
-              </ul>
-            </div>
-
-             <!-- <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-               <ul>
-                 <li class="list-inline-item"><a href="#"><img title="HBase" alt="HBase" src="icons/hbase.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a></li>
-               </ul>
-             </div> -->
-
-
-           </div>
-         </div>
-     </section>
-
-     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-       <div class="my-auto">
-         <div class="subheading mb-4"><h3 class="subheading-style">Frameworks</h3></div>
-          <div style="width: 100%; height: 100%;">
-
-            <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Hadoop" alt="Hadoop" src="icons/hadoop.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="GitHub" alt="GitHub" src="icons/github.png" width=90% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="PyTorch" alt="PyTorch" src="icons/PyTorch.png" width=60% style="display: block; margin-top: 40px;margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Spark" alt="Spark" src="icons/spark.png" width=75% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Android Jetpack" alt="Android Jetpack" src="icons/android_jetpack.png" width=55% style="display: block; margin-top: 15%;  margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Tensosflow" alt="Tensorflow" src="icons/tensorflow.png" width=49% style="display: block; margin-top: 12%;  margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Flask" alt="Flask" src="icons/flask.svg" width=45% style="display: block; margin-left: auto; margin-right: auto;"></a></li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Fastapi" alt="Fastapi" src="icons/fastapi-1.svg" width=46% style="display: block; margin-top: 35px;margin-left: auto; margin-right: auto;"></a></li>
-              </ul>
-              <!-- <ul>
-                <li class="list-inline-item"><a href="#"><img title="Scikit-Learn" alt="Scikit-Learn" src="icons/scikit-learn.png" width=70% style="display: block; margin-top: 15%;  margin-left: auto; margin-right: auto;"></a> </li>
-              </ul> -->
-            </div>
-
-            <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Django" alt="Django" src="icons/django.png" width=75% style="display: block; margin-top: 30px;margin-left: auto; margin-right: auto;"></a></li>
-              </ul>
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="pytest" alt="pytest" src="icons/pytest.png" width=75% style="display: block; margin-top: 0px;margin-left: auto; margin-right: auto;"></a></li>
-              </ul>
-
-            </div>
-          </div>
-        </div>
+      </div>
     </section>
-
-     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-       <div class="my-auto">
-         <div class="subheading mb-4"><h4 class="subheading-style">Operating Systems</h4></div>
-          <div style="width: 100%; height: 100%;">
-
-            <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Windows" alt="Windows" src="icons/windows.png" width=90% style="display: block; margin-top: 0px; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Ubuntu" alt="Ubuntu" src="icons/ubuntu.png" width=68% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: left; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"><a href="#"><img title="Pop!_OS" alt="Pop!_OS" src="icons/pop-os.svg" width=56% style="display: block; margin-left: auto; margin-right: auto;"></a> </li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"></li>
-              </ul>
-            </div>
-
-            <div style="width: 25%; height: 100%; float: right; border-collapse: collapse; font-size: 18px;">
-              <ul>
-                <li class="list-inline-item"></li>
-              </ul>
-
-            </div>
+    
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="programming-languages">
+      <div class="my-auto">
+        <div class="skill-category">
+          <h3 class="subheading-style">Programming Languages</h3>
+        </div>
+        
+        <div class="skills-container">
+          <!-- Python -->
+          <div class="skill-item">
+            <img title="Python" alt="Python" src="icons/python.png">
+          </div>
+          
+          <!-- Java -->
+          <div class="skill-item">
+            <img title="Java" alt="Java" src="icons/java.png">
+          </div>
+          
+          <!-- C -->
+          <div class="skill-item">
+            <img title="C" alt="C" src="icons/c.png">
+          </div>
+          
+          <!-- XML -->
+          <div class="skill-item">  
+            <img title="XML" alt="XML" src="icons/icons8-xml-96.png" style = "width: 70%; height: auto;">
+          </div>
+          
+          <!-- R -->
+          <div class="skill-item">
+            <img title="R" alt="R" src="icons/R.png">
+          </div>
+          
+          <!-- MATLAB -->
+          <div class="skill-item">
+            <img title="MATLAB" alt="MATLAB" src="icons/MATLAB.png">
+          </div>
+          
+          <!-- JavaScript -->
+          <div class="skill-item">
+            <img title="JavaScript" alt="JavaScript" src="icons/js.svg" style="max-width: 60%; padding-top: 8px">
+          </div>
+          
+          <!-- Verilog -->
+          <div class="skill-item">
+            <img title="Verilog" alt="Verilog" src="icons/verilog.png">
+          </div>
+          
+          <!-- Android -->
+          <div class="skill-item">
+            <img title="Android" alt="Android" src="icons/android.png" style = "max-width: 110%;">
+          </div>
+          
+          <!-- HTML -->
+          <div class="skill-item">
+            <img title="HTML" alt="HTML" src="icons/html.png" style = "padding: -3px;">
+          </div>
+          
+          <!-- Shell Script -->
+          <div class="skill-item">
+            <img title="Shell Script" alt="Shell Script" src="icons/shell.png">
+          </div>
+          
+          <!-- CSS -->
+          <div class="skill-item">
+            <img title="CSS" alt="CSS" src="icons/css.png" style="max-width: 75%;">
+          </div>
+          
+          <!-- Scilab -->
+          <div class="skill-item">
+            <img title="Scilab" alt="Scilab" src="icons/scilab.jpeg" style="max-width: 80%; padding-top: 2vw;">
+          </div>
+          
+          <!-- Octave -->
+          <div class="skill-item">
+            <img title="Octave" alt="Octave" src="icons/octave.png" style="max-width: 62%;">
+          </div>
+          
+          <!-- Arduino -->
+          <div class="skill-item">
+            <img title="Arduino" alt="Arduino" src="icons/arduino.png">
+          </div>
+          
+          <!-- LaTeX -->
+          <div class="skill-item">
+            <img title="LaTeX" alt="LaTeX" src="icons/LaTeX.svg">
           </div>
         </div>
+      </div>
     </section>
+    
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="databases">
+      <div class="my-auto">
+        <div class="skill-category">
+          <h3 class="subheading-style">Databases</h3>
+        </div>
+        
+        <div class="skills-container">
+          <!-- MySQL -->
+          <div class="skill-item">
+            <img title="MySQL" alt="MySQL" src="icons/mysql.png">
+          </div>
+          
+          <!-- SQLite -->
+          <div class="skill-item">
+            <img title="SQLite" alt="SQLite" src="icons/SQLite.png">
+          </div>
+          
+          <!-- MongoDB -->
+          <div class="skill-item">
+            <img title="MongoDB" alt="MongoDB" src="icons/mongoDB.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="frameworks">
+      <div class="my-auto">
+        <div class="skill-category">
+          <h3 class="subheading-style">Frameworks</h3>
+        </div>
+        
+        <div class="skills-container">
+          <!-- Hadoop -->
+          <div class="skill-item">
+            <img title="Hadoop" alt="Hadoop" src="icons/hadoop.png">
+          </div>
+          
+          <!-- Spark -->
+          <div class="skill-item">
+            <img title="Spark" alt="Spark" src="icons/spark.png">
+          </div>
+          
+          <!-- Flask -->
+          <div class="skill-item">
+            <img title="Flask" alt="Flask" src="icons/flask.svg" style="max-width: 45%;">
+          </div>
+          
+          <!-- Django -->
+          <div class="skill-item">
+            <img title="Django" alt="Django" src="icons/django.png">
+          </div>
+          
+          <!-- GitHub -->
+          <div class="skill-item">
+            <img title="GitHub" alt="GitHub" src="icons/github.png" style="max-width: 90%;">
+          </div>
+          
+          <!-- Android Jetpack -->
+          <div class="skill-item">
+            <img title="Android Jetpack" alt="Android Jetpack" src="icons/android_jetpack.png" style="max-width: 55%;">
+          </div>
+          
+          <!-- Fastapi -->
+          <div class="skill-item">
+            <img title="Fastapi" alt="Fastapi" src="icons/fastapi-1.svg" style="max-width: 46%;">
+          </div>
+          
+          <!-- pytest -->
+          <div class="skill-item">
+            <img title="pytest" alt="pytest" src="icons/pytest.png">
+          </div>
+          
+          <!-- PyTorch -->
+          <div class="skill-item">
+            <img title="PyTorch" alt="PyTorch" src="icons/PyTorch.png" style="max-width: 60%;">
+          </div>
+          
+          <!-- Tensorflow -->
+          <div class="skill-item">
+            <img title="Tensorflow" alt="Tensorflow" src="icons/tensorflow.png" style="max-width: 49%;">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="operating-systems">
+      <div class="my-auto">
+        <div class="skill-category">
+          <h3 class="subheading-style">Operating Systems</h3>
+        </div>
+        
+        <div class="skills-container">
+          <!-- Windows -->
+          <div class="skill-item">
+            <img title="Windows" alt="Windows" src="icons/windows.png" style="max-width: 90%;">
+          </div>
+          
+          <!-- Ubuntu -->
+          <div class="skill-item">
+            <img title="Ubuntu" alt="Ubuntu" src="icons/ubuntu.png" style="max-width: 68%;">
+          </div>
+          
+          <!-- Pop!_OS -->
+          <div class="skill-item">
+            <img title="Pop!_OS" alt="Pop!_OS" src="icons/pop-os.svg" style="max-width: 56%;">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
 
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+  <svg class="circular" width="48px" height="48px">
+    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+  </svg>
+</div>
 
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
 
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-
-
-
-  </body>
+</body>
 </html>
